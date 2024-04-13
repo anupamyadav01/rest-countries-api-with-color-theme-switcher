@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./country.js" defer></script>
+    <style>
+      .btn {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="py-4 px-10 shadow-md">
+      <nav class="flex justify-between max-w-[1200px] mx-auto items-center">
+        <h1 class="font-bold text-xl">Where in the world?</h1>
+        <button class="flex text-lg leading-4">
+          <img src="./Icons/moon.png" class="w-4 mr-2" /> Dark Mode
+        </button>
+      </nav>
+    </header>
+
+    <main class="mt-10 py-4 px-10">
+      <div class="max-w-[1200px] mx-auto">
+        <button
+          id="back_btn"
+          class="flex justify-center items-center px-3 py-2 w-28 btn"
+        >
+          <img src="./Icons/arrow.png" class="w-4" />
+          <span class="text-lg ml-3">Back</span>
+        </button>
+        <section
+          id="country_section"
+          class="flex justify-left items-start mt-14 gap-20 px-10"
+        ></section>
+      </div>
+    </main>
+  </body>
+</html>
